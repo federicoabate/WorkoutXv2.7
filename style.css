@@ -121,3 +121,9 @@ button[data-action="toggleSearch"]::first-letter{font-size:19px}
 .session-settings summary{cursor:pointer;font-weight:600}
 .session-settings-content{padding:8px 0 4px;line-height:1.8}
 .session-settings-content strong{color:#fff;font-weight:700}
+
+/* v1.9.5: only the four-field load/reps/RPE row; leave other set layouts unchanged */
+.set-entry.set-entry-reps-rpe{grid-template-columns:minmax(0,1fr) minmax(0,1fr) minmax(58px,1fr) 46px!important;gap:6px!important}
+.set-entry.set-entry-reps-rpe>.field,.set-entry.set-entry-reps-rpe>div{min-width:0}
+.set-entry.set-entry-reps-rpe .field span{white-space:nowrap}
+@media(max-width:420px){.set-entry.set-entry-reps-rpe{grid-template-columns:minmax(0,1fr) minmax(0,1fr) minmax(52px,1fr) 42px!important;gap:5px!important}}
