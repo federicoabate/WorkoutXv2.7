@@ -103,7 +103,7 @@ button[data-action="toggleSearch"]::first-letter{font-size:19px}
 .session-plan>span:not(.plan-caption){min-width:0;display:flex;flex-direction:column;align-items:center;gap:2px;text-align:center;white-space:normal!important;font-size:9px!important;overflow-wrap:anywhere}
 .session-plan b{font-size:11px!important;line-height:1.25}
 .session-plan>span:nth-child(2),.session-plan>span:nth-child(3){border-right:1px solid #494b51}
-.session-plan>span:nth-child(2):after,.session-plan>span:nth-child(3):after{content:'×';position:absolute;transform:translateX(24px);color:#aaa;font-size:11px}
+
 .set-entry{grid-template-columns:minmax(0,1fr) minmax(0,1fr) 10px minmax(0,1fr) 46px!important;gap:4px!important}
 .set-multiply{align-self:center;justify-self:center;font-size:13px;color:#999}
 .set-entry .field span{font-size:10px!important}
@@ -113,3 +113,6 @@ button[data-action="toggleSearch"]::first-letter{font-size:19px}
 .skip-btn{display:block;margin:6px 0 0 auto;padding:3px 11px!important;font-size:11px!important}
 .fixed-table .row{justify-content:flex-end}
 @media(max-width:420px){.set-entry{grid-template-columns:minmax(0,1fr) minmax(0,1fr) 8px minmax(0,1fr) 42px!important;gap:3px!important}.session-plan b{font-size:10px!important}}
+
+/* v1.9.2: center the decorative multiplication sign between Valore and Reps */
+.set-multiply{display:flex;align-items:center;justify-content:center;align-self:stretch;justify-self:stretch;padding-top:14px;line-height:1}
