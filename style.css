@@ -92,3 +92,24 @@ button[data-action="toggleSearch"]::first-letter{font-size:19px}
 .set-number{display:inline-flex;align-items:center;gap:6px;flex-wrap:wrap}.done-inline{display:inline-flex!important;align-items:center;gap:3px;font-size:11px!important;font-weight:500;color:#F76C32;white-space:nowrap}.done-inline input{width:16px!important;height:16px!important;accent-color:#F76C32;margin:0}
 .relation-next{position:relative;border-left:4px solid #F76C32!important;margin:7px 0 0 16px!important;padding:9px 12px!important;color:#F76C32!important;font-size:14px!important;font-weight:800!important}
 .linked-arrow{position:relative;margin-top:17px!important}.linked-arrow:before{content:'↓';position:absolute;top:-25px;left:14px;color:#F76C32;font-size:27px;font-weight:900;line-height:25px}
+
+/* v1.9: compattezza e leggibilità */
+.ex-variant{color:#fff!important;font-weight:600!important}
+.setting-value{color:#fff!important;background:#282a30!important;border-color:#565963!important}
+.done-inline,.done-word{color:var(--text,#e6e6e6)!important}
+.done-inline input{accent-color:#25b46b!important}
+.session-plan{display:grid!important;grid-template-columns:repeat(5,minmax(0,1fr));gap:2px!important;padding:7px 5px!important;align-items:center!important}
+.session-plan .plan-caption{grid-column:1/-1;border-bottom:1px solid #41434a;padding-bottom:5px;margin-bottom:4px}
+.session-plan>span:not(.plan-caption){min-width:0;display:flex;flex-direction:column;align-items:center;gap:2px;text-align:center;white-space:normal!important;font-size:9px!important;overflow-wrap:anywhere}
+.session-plan b{font-size:11px!important;line-height:1.25}
+.session-plan>span:nth-child(2),.session-plan>span:nth-child(3){border-right:1px solid #494b51}
+.session-plan>span:nth-child(2):after,.session-plan>span:nth-child(3):after{content:'×';position:absolute;transform:translateX(24px);color:#aaa;font-size:11px}
+.set-entry{grid-template-columns:minmax(0,1fr) minmax(0,1fr) 10px minmax(0,1fr) 46px!important;gap:4px!important}
+.set-multiply{align-self:center;justify-self:center;font-size:13px;color:#999}
+.set-entry .field span{font-size:10px!important}
+.set-entry .field:has([data-setfield="rpe"]){max-width:46px}
+.exercise-move{display:flex;justify-content:flex-end;gap:3px;margin-top:3px}
+.exercise-move .btn{padding:2px 8px!important;min-height:24px!important}
+.skip-btn{display:block;margin:6px 0 0 auto;padding:3px 11px!important;font-size:11px!important}
+.fixed-table .row{justify-content:flex-end}
+@media(max-width:420px){.set-entry{grid-template-columns:minmax(0,1fr) minmax(0,1fr) 8px minmax(0,1fr) 42px!important;gap:3px!important}.session-plan b{font-size:10px!important}}
