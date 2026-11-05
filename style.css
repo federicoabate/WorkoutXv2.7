@@ -116,3 +116,8 @@ button[data-action="toggleSearch"]::first-letter{font-size:19px}
 
 /* v1.9.2: center the decorative multiplication sign between Valore and Reps */
 .set-multiply{display:flex;align-items:center;justify-content:center;align-self:stretch;justify-self:stretch;padding-top:14px;line-height:1}
+
+.session-settings{margin:8px 0}
+.session-settings summary{cursor:pointer;font-weight:600}
+.session-settings-content{padding:8px 0 4px;line-height:1.8}
+.session-settings-content strong{color:#fff;font-weight:700}
