@@ -1,21 +1,20 @@
-WorkoutX v2.5 — correzioni RPE, RM, Final Drop Set
-================================================
-Aggiornamento mirato alla precedente build v2.5.
+WorkoutX v2.6
+=============
+Aggiornamento mirato basato sulla build v2.5 con correzioni RPE, RM e Final Drop Set.
 
-RPE: valori storici contraddittori esclusi dalla scelta; una prestazione
-con RPE inferiore e carico/ripetizioni non inferiori prevale per i
-suggerimenti di livelli superiori. Storico non riscritto.
+- Livello di Forza: classe di peso utilizzata evidenziata sopra la barra;
+  soglie nere visibili al 25%, 50% e 75% su tutte le barre;
+  anni e percentuali visualizzati solo sotto la barra principale in Approfondisci;
+  grafico illustrativo con assi anni e ΔPWR/anno; testi richiesti aggiornati.
+- Soglie utilizzate: tabella dei sette esercizi visualizzata subito e
+  aggiornata al cambio di classe. Utilizza STRENGTH_LIMITS, esattamente
+  la stessa matrice di soglie usata per posizionare i cursori.
+- HP-BF: asse HP con 0; barre con estremi e soglie coincidenti con il
+  grafico; etichette delle fasce centrate in proporzione all'ampiezza;
+  formule separate e testo finale aggiornato.
+- Titolo Statistiche e versione visibile v2.6.
 
-RM: i riferimenti reali RIR 0 (massimo carico a pari ripetizioni) vengono
-resi coerenti. Le stime tra riferimenti reali sono interpolate; quelle
-esterne estrapolate dal riferimento reale più vicino. Scala 1–15 RM
-non crescente. Suggerimenti e tabella utilizzano la medesima funzione.
-
-Final Drop Set: un solo set eseguibile, mostrato esclusivamente accanto
-all'ultimo set del principale. Il tasto + Set non aggiunge set al Final
-Drop Set; eliminazione e modifica del conteggio del suo unico set
-impedite. Il salvataggio mantiene i record per singolo esercizio.
-
-Verificati: sintassi JS, integrità ZIP, test di calcolo mirati.
-Non effettuato collaudo completo dell'interfaccia su iPad/Safari.
-Conservare un backup JSON prima dell'installazione.
+Non sono state introdotte migrazioni dei dati, né modifiche allo schema
+di IndexedDB o al formato dei backup JSON. Consigliato backup prima
+dell'aggiornamento. Test statici e sintassi JavaScript verificati;
+non è stato effettuato collaudo su Safari/iPad.

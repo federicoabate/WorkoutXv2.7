@@ -163,3 +163,28 @@ button[data-action="toggleSearch"]::first-letter{font-size:19px}
 .strength-inline-boundaries{display:none;justify-content:space-between;gap:3px;font-size:9px;text-align:center;color:var(--muted,#aaa);padding:4px 0 10px}
 .strength-inline-boundaries span{flex:1;min-width:0}
 .strength-section:has(.strength-advanced[open]) .strength-inline-boundaries{display:flex}
+
+/* WorkoutX v2.6: precise thresholds without changing the underlying metrics. */
+.strength-weight-class{margin:3px 0 12px;color:#F76C32;font-size:14px;font-weight:600}
+.strength-track{background-image:linear-gradient(90deg,transparent calc(25% - .6px),#191919 calc(25% - .6px),#191919 calc(25% + .6px),transparent calc(25% + .6px),transparent calc(50% - .6px),#191919 calc(50% - .6px),#191919 calc(50% + .6px),transparent calc(50% + .6px),transparent calc(75% - .6px),#191919 calc(75% - .6px),#191919 calc(75% + .6px),transparent calc(75% + .6px)),linear-gradient(90deg,#f8bfa5,#F76C32,#8E3618)}
+.strength-track:before,.strength-track:after{display:none}
+.strength-scale-points{display:none;position:relative;height:31px;margin-top:1px;margin-bottom:4px;font-size:9px;color:var(--muted,#aaa);line-height:1.15}
+.strength-scale-points span{position:absolute;top:0;transform:translateX(-50%);width:20%;text-align:center}
+.strength-scale-points span:first-child{transform:none;text-align:left}
+.strength-scale-points span:last-child{transform:translateX(-100%);text-align:right}
+.strength-section:has(.strength-advanced[open]) .strength-scale-points{display:block}
+.strength-section .strength-inline-boundaries{display:none!important}
+.body-bar-track{margin-bottom:0}
+.body-bar-tick{position:absolute;top:0;bottom:0;width:1px;background:#171717;transform:translateX(-50%)}
+.body-bar-ticks{height:20px;position:relative;margin-top:4px}
+.body-tick-label{position:absolute;top:0;transform:translateX(-50%);font-size:9px;white-space:nowrap}
+.body-tick-label:first-child{transform:none}
+.body-tick-label:last-child{transform:translateX(-100%)}
+.body-bar-bands{position:relative;height:28px}
+.body-bar-bands small{position:absolute;top:0;text-align:center;font-size:9px;line-height:1.2;overflow-wrap:anywhere}
+
+/* Threshold percentages belong only to the markers beneath the main bar. */
+.strength-section .strength-pointer-percent,
+.strength-section .strength-estimated-percent,
+.strength-section:has(.strength-advanced[open]) .strength-pointer-percent,
+.strength-section:has(.strength-advanced[open]) .strength-estimated-percent{display:none}
