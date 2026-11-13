@@ -127,3 +127,39 @@ button[data-action="toggleSearch"]::first-letter{font-size:19px}
 .set-entry.set-entry-reps-rpe>.field,.set-entry.set-entry-reps-rpe>div{min-width:0}
 .set-entry.set-entry-reps-rpe .field span{white-space:nowrap}
 @media(max-width:420px){.set-entry.set-entry-reps-rpe{grid-template-columns:minmax(0,1fr) minmax(0,1fr) minmax(52px,1fr) 42px!important;gap:5px!important}}
+
+/* v1.9.6: layout specifico delle serie senza RPE e spiegazione muscolare */
+.set-entry.set-entry-reps-only{grid-template-columns:minmax(0,1fr) minmax(0,1fr) minmax(68px,1fr)!important;gap:6px!important}
+.set-entry.set-entry-reps-only>.field,.set-entry.set-entry-reps-only>div{min-width:0}
+.set-entry.set-entry-reps-only .field span{white-space:nowrap}
+.muscle-help{margin-top:12px}.muscle-help details{border-top:1px solid #36383d;padding:10px 0}.muscle-help summary{cursor:pointer;font-weight:600}.muscle-help table{width:100%;font-size:12px;margin:8px 0;border-collapse:collapse}.muscle-help td,.muscle-help th{padding:6px;border-bottom:1px solid #35363a;text-align:left}.muscle-formula{font-size:13px;line-height:1.8;margin:8px 0}.muscle-chart-pair{display:grid;grid-template-columns:1fr 1fr;gap:10px}.muscle-example-chart{width:100%;height:auto}.muscle-help h4{margin:12px 0 5px}.muscle-chart-pair small{font-size:11px;color:#aaa}.save-targets{display:flex;flex-direction:column;align-items:stretch}
+
+/* WorkoutX v2.3: visualizzazione unificata degli esercizi collegati */
+.linked-member-separator{height:1px;background:rgba(247,108,50,.25);margin:14px 0}
+.jump-between-rest{display:block;text-align:center;font-size:11px;color:var(--muted,#aaa);margin:5px 0}
+
+/* v2.4: visual separation of linked rounds and Jump rest labels */
+.linked-set-round{border:1px solid rgba(247,108,50,.24);border-radius:12px;padding:7px 9px;margin:10px 0}
+.linked-set-round .compact-set{margin:5px 0}
+.jump-between-rest{color:#f4f4f5;font-weight:500}
+.jump-badge-rest{color:#F76C32;font-size:11px;font-weight:500}
+
+/* v2.5 general picture */
+.radar-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.radar-card{min-width:0;text-align:center;border:1px solid #3b3b3b;border-radius:12px;padding:6px}.radar-card svg{width:100%;height:auto}.radar-percent{display:block;font-size:23px}.radar-leading{color:#F76C32}.body-map{display:block;width:100%;max-width:440px;margin:auto}.body-map circle{cursor:pointer}.body-bar{margin:16px 0}.body-bar-track{height:15px;background:linear-gradient(90deg,#f6b18d,#F76C32,#8E3618);border-radius:12px;position:relative;margin:20px 0 8px}.body-marker{position:absolute;top:-21px;color:#F76C32;transform:translateX(-50%)}.body-bar-labels{display:flex;justify-content:space-between;gap:3px}.body-bar-labels small{font-size:9px;line-height:1.3;max-width:25%;overflow-wrap:anywhere}
+
+.strength-row{margin:16px 0}.strength-track{height:18px;border-radius:10px;background:linear-gradient(90deg,#f8bfa5,#F76C32,#8E3618);position:relative;margin:22px 0 8px}.strength-track:before,.strength-track:after{content:'';position:absolute;top:0;bottom:0;width:1px;background:#2228}.strength-track:before{left:25%;box-shadow:0 0 #2228,0 0 #2228}.strength-track:after{left:75%}.strength-pointer{position:absolute;top:-22px;transform:translateX(-50%);color:#F76C32}.strength-labels{display:grid;grid-template-columns:repeat(4,1fr);text-align:center;font-size:10px}.strength-boundaries{display:flex;justify-content:space-between;gap:3px;font-size:9px;text-align:center}.strength-table-wrap{overflow-x:auto}.strength-table-wrap table{min-width:540px;font-size:12px}
+
+.strength-pointer-clickable{cursor:pointer;z-index:3}
+.strength-pointer-percent{position:absolute;bottom:1.2em;left:50%;transform:translateX(-50%);white-space:nowrap;font-size:11px;font-weight:800;color:#F76C32}
+
+/* v2.5: the detailed population annotations are opt-in. */
+.strength-section .strength-pointer-percent,
+.strength-section .strength-estimated-percent{display:none}
+.strength-section:has(.strength-advanced[open]) .strength-pointer-percent,
+.strength-section:has(.strength-advanced[open]) .strength-estimated-percent{display:block}
+.strength-missing{font-size:.76rem;max-width:100%;overflow-wrap:anywhere}
+.rpe-conflict{color:#F76C32;font-size:.76rem}
+
+.strength-inline-boundaries{display:none;justify-content:space-between;gap:3px;font-size:9px;text-align:center;color:var(--muted,#aaa);padding:4px 0 10px}
+.strength-inline-boundaries span{flex:1;min-width:0}
+.strength-section:has(.strength-advanced[open]) .strength-inline-boundaries{display:flex}
