@@ -188,3 +188,18 @@ button[data-action="toggleSearch"]::first-letter{font-size:19px}
 .strength-section .strength-estimated-percent,
 .strength-section:has(.strength-advanced[open]) .strength-pointer-percent,
 .strength-section:has(.strength-advanced[open]) .strength-estimated-percent{display:none}
+
+/* v2.7: table borders and exact header/column alignment. */
+.strength-table-wrap{overflow-x:auto;margin-top:10px;border:1px solid #555;border-radius:7px}
+.strength-threshold-table{width:100%;min-width:590px;border-collapse:collapse;table-layout:fixed;font-size:12px}
+.strength-threshold-table th,.strength-threshold-table td{border:1px solid #555;padding:10px 7px;vertical-align:middle}
+.strength-threshold-table thead th{font-weight:700;text-align:center;background:rgba(247,108,50,.13)}
+.strength-threshold-table thead th:first-child{width:23%}
+.strength-threshold-table tbody th{text-align:left;font-weight:600;white-space:normal}
+.strength-threshold-table tbody td{text-align:center;white-space:nowrap;font-variant-numeric:tabular-nums}
+.strength-threshold-table tbody tr:nth-child(even){background:rgba(255,255,255,.035)}
+/* The percentage belongs to the composite cursor, and appears only on expansion. */
+.strength-section .strength-pointer-percent{display:none!important}
+.strength-section:has(.strength-advanced[open]) .strength-pointer-percent{display:block!important}
+.strength-section .strength-main>.strength-row .strength-pointer{z-index:5}
+.strength-section .strength-main>.strength-row .strength-pointer-percent{bottom:1.5em}

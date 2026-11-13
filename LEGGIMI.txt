@@ -1,20 +1,19 @@
-WorkoutX v2.6
-=============
-Aggiornamento mirato basato sulla build v2.5 con correzioni RPE, RM e Final Drop Set.
+WorkoutX v2.7 — aggiornamento mirato dalla v2.6
+================================================
+- Dicitura delle categorie: Multiple Drop sets e Final Drop set.
+- Nessun campo RPE nei set eseguibili di quelle due categorie.
+- Tabella Soglie utilizzate con colonne centrate, bordi e righe leggibili;
+  stessi valori PWR della versione precedente.
+- Grafico HP-BF: lo zero HP è a destra; nuova linea tratteggiata BF 15%;
+  zona arancione limitata a HP>0 e BF<15%.
+- Livello di Forza: percentuale sopra il cursore solo con Approfondisci
+  aperto, interpolata linearmente per ciascuna fascia:
+  100-45%, 45-13%, 13-1.5%, 1.5-0%. Fino a 3 decimali.
+- Versione visibile v2.7 e nuova cache PWA.
 
-- Livello di Forza: classe di peso utilizzata evidenziata sopra la barra;
-  soglie nere visibili al 25%, 50% e 75% su tutte le barre;
-  anni e percentuali visualizzati solo sotto la barra principale in Approfondisci;
-  grafico illustrativo con assi anni e ΔPWR/anno; testi richiesti aggiornati.
-- Soglie utilizzate: tabella dei sette esercizi visualizzata subito e
-  aggiornata al cambio di classe. Utilizza STRENGTH_LIMITS, esattamente
-  la stessa matrice di soglie usata per posizionare i cursori.
-- HP-BF: asse HP con 0; barre con estremi e soglie coincidenti con il
-  grafico; etichette delle fasce centrate in proporzione all'ampiezza;
-  formule separate e testo finale aggiornato.
-- Titolo Statistiche e versione visibile v2.6.
+Nessuna migrazione dello schema dati, nessuna modifica al formato dei
+backup JSON o alle soglie numeriche della forza. Consigliato backup JSON
+prima dell'aggiornamento.
 
-Non sono state introdotte migrazioni dei dati, né modifiche allo schema
-di IndexedDB o al formato dei backup JSON. Consigliato backup prima
-dell'aggiornamento. Test statici e sintassi JavaScript verificati;
-non è stato effettuato collaudo su Safari/iPad.
+Verifiche: sintassi JavaScript, calcoli delle percentuali, condizioni
+RPE, geometria HP-BF, integrità ZIP. Non testato su Safari/iPad.
