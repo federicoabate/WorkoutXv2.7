@@ -1,19 +1,20 @@
-WorkoutX v2.7 — aggiornamento mirato dalla v2.6
+WorkoutX v2.8 — aggiornamento mirato dalla v2.7
 ================================================
-- Dicitura delle categorie: Multiple Drop sets e Final Drop set.
-- Nessun campo RPE nei set eseguibili di quelle due categorie.
-- Tabella Soglie utilizzate con colonne centrate, bordi e righe leggibili;
-  stessi valori PWR della versione precedente.
-- Grafico HP-BF: lo zero HP è a destra; nuova linea tratteggiata BF 15%;
-  zona arancione limitata a HP>0 e BF<15%.
-- Livello di Forza: percentuale sopra il cursore solo con Approfondisci
-  aperto, interpolata linearmente per ciascuna fascia:
-  100-45%, 45-13%, 13-1.5%, 1.5-0%. Fino a 3 decimali.
-- Versione visibile v2.7 e nuova cache PWA.
+- Statistiche: maggiore distanza fra etichette e barra Livello complessivo;
+  testo "Media degli esercizi di forza".
+- Storico: Modifica apre la stessa interfaccia della giornata avviata, con
+  frecce per riordinare gruppi/esercizi. "Termina e salva" aggiorna la
+  registrazione originale; "Annulla modifiche" la lascia intatta.
+- Storico: Duplica crea una seconda registrazione con ID distinto e
+  tutti i dati e orari identici.
+- Al termine del salvataggio: Riepilogo allenamento scorrevole con
+  programma, giornata, data/ora di inizio, nuovi PR e conteggi dei
+  set eseguiti/non eseguiti. Gli esercizi parzialmente completati
+  compaiono in ENTRAMBI gli elenchi con i rispettivi conteggi.
+- Durante la sessione: etichette Nuovo PR, Nuovo RM e Ripetizioni massime
+  nei set che superano i riferimenti dello storico precedente.
+- Versione visibile v2.8 e cache PWA aggiornata.
 
-Nessuna migrazione dello schema dati, nessuna modifica al formato dei
-backup JSON o alle soglie numeriche della forza. Consigliato backup JSON
-prima dell'aggiornamento.
-
-Verifiche: sintassi JavaScript, calcoli delle percentuali, condizioni
-RPE, geometria HP-BF, integrità ZIP. Non testato su Safari/iPad.
+I dati IndexedDB e il formato JSON sono invariati. Prima di aggiornare
+si consiglia un backup JSON. Verificati sintassi JS, test logici mirati,
+integrità archivio. Non collaudato su Safari/iPad.

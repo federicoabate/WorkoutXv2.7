@@ -203,3 +203,26 @@ button[data-action="toggleSearch"]::first-letter{font-size:19px}
 .strength-section:has(.strength-advanced[open]) .strength-pointer-percent{display:block!important}
 .strength-section .strength-main>.strength-row .strength-pointer{z-index:5}
 .strength-section .strength-main>.strength-row .strength-pointer-percent{bottom:1.5em}
+
+/* WorkoutX v2.8: targeted strength heading spacing */
+.strength-main>.strength-row>.row{margin-bottom:18px}
+.strength-main>.strength-row>.strength-track{margin-top:27px}
+/* Record markers remain in normal document flow, beneath their own executable set. */
+.set-record-badges{display:flex;flex-wrap:wrap;gap:5px;margin:7px 0 2px;min-height:0}
+.set-record-badges:empty{display:none}
+.record-chip{display:inline-flex;align-items:center;border-radius:6px;padding:4px 7px;font-size:10px;font-weight:750;line-height:1.2}
+.record-chip-pr{background:rgba(247,108,50,.2);border:1px solid #F76C32;color:#ffad82}
+.record-chip-secondary{background:rgba(170,170,180,.12);border:1px solid #666672;color:#d5d5df}
+/* Scrollable summary modal; no action is needed to persist the already-saved workout. */
+.workout-summary{max-height:calc(78dvh - 80px);overflow-y:auto;overscroll-behavior:contain;padding:2px 3px 20px}
+.summary-meta{border-bottom:1px solid var(--line);padding:5px 0 13px;line-height:1.7}
+.summary-meta strong{color:var(--accent)}
+.workout-summary h4{margin:19px 0 8px}
+.summary-pr{border:1px solid #975032;border-radius:12px;padding:12px;margin:10px 0;background:rgba(247,108,50,.06)}
+.summary-pr>strong{display:inline-block;background:#F76C32;color:#1A0D07;border-radius:5px;padding:3px 8px;font-size:11px;margin-bottom:8px}
+.summary-pr-result{border:1px solid #74442d;border-radius:8px;background:#241b18;margin-top:8px;padding:10px;font-size:17px;font-weight:800}
+.summary-entry{display:flex;justify-content:space-between;gap:12px;align-items:center;border-bottom:1px solid var(--line);padding:9px 1px}
+.summary-entry>span{overflow-wrap:anywhere;min-width:0}
+.summary-entry>strong{white-space:nowrap}
+.summary-ok{color:#50c878;font-size:17px}
+.summary-no{color:#f36b6b;font-size:17px}
